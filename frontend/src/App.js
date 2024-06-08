@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import WebFont from 'webfontloader';
+//import WebFont from 'webfontloader';
 import Home from './component/Home/Home';
 import ProductDetails from './component/Product/ProductDetails';
 import Products from './component/Product/Products';
@@ -59,11 +59,11 @@ function App() {
   
 
   useEffect(() => {
-    WebFont.load({
-      google: {
-        families: ['Roboto', 'Droid Sans', 'Chilanks'],
-      },
-    });
+    // WebFont.load({
+    //   google: {
+    //     families: ['Roboto', 'Droid Sans', 'Chilanks'],
+    //   },
+    // });
 
     store.dispatch(loadUser());
     getStripeApiKey();
